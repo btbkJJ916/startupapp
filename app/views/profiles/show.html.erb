@@ -2,13 +2,10 @@
 <%= image_tag (@profile.picture_url(:standard)) %>
 
 <p>
-  <strong>First name:</strong>
-  <%= @profile.first_name %>
+  
+  <%= @profile.first_name %> <%= @profile.last_name %>
 </p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @profile.last_name %>
+  
 </p>
 
 <p>
@@ -72,8 +69,8 @@
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @profile.user %>
+  <strong>Email:</strong>
+  <%= @profile.user.email %>
 </p>
 
 <% if user_signed_in? %>
