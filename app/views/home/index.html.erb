@@ -1,0 +1,7 @@
+<h1>The New Startup Community</h1>
+<hr>
+
+<%= link_to 'get started', new_user_registration_path, class: "btn btn-info btn-lg" %>
+<% if user_signed_in? %>
+<%= link_to 'Sign out', destroy_user_session_path, method: :delete %> 
+<% end %>
